@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy & Physiology Introduction Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 15px;
+        }
+        h3 {
+            color: #28a745;
+            margin-top: 25px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #ced4da;
+        }
+        .question-block {
+            background: #e9f7ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #007bff;
+        }
+        .question-block strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .answer-area {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-style: italic;
+        }
+        .answer-button {
+            background-color: #ffc107;
+            color: #333;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .answer-button:hover {
+            background-color: #e0a800;
+        }
+        .hidden {
+            display: none;
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🧠 Introduction to Anatomy and Physiology Quiz</h1>
+    <p style="text-align: center; font-size: 1.1em;">Test your knowledge of basic concepts from Chapter 1.</p>
+
+    <hr>
+
+    <h3>Section A: Definitions and Basic Terminology</h3>
+    
+    <div class="question-block">
+        <strong>1. Multiple Choice:</strong>
+        <p>Which branch of science, defined by Aristotle as "cutting up or taking apart" (anatome), is the study of the structure of the body?</p>
+        <ol type="A">
+            <li>Physiology</li>
+            <li>Histology</li>
+            <li>Anatomy</li>
+            <li>Embryology</li>
+        </ol>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer1')">Show Answer</button>
+        <div id="answer1" class="answer-area hidden">C) Anatomy</div>
+    </div>
+
+    <div class="question-block">
+        <strong>2. Fill in the Blank:</strong>
+        <p>The study of the functions of living organisms and the processes that regulate them is called ___________.</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer2')">Show Answer</button>
+        <div id="answer2" class="answer-area hidden">Physiology</div>
+    </div>
+
+    <div class="question-block">
+        <strong>3. True or False:</strong>
+        <p>The **Anatomical Position** is described as a person standing erect, with the head, eyes, and toes directed forward, and the palms facing <em>posteriorly</em>.</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer3')">Show Answer</button>
+        <div id="answer3" class="answer-area hidden">False (The palms must face anteriorly.)</div>
+    </div>
+
+    <hr>
+
+    <h3>Section B: Anatomical Planes and Directional Terms</h3>
+
+    <div class="question-block">
+        <strong>4. Multiple Choice:</strong>
+        <p>Which imaginary vertical plane passes through the body at right angles to the median plane, dividing the body into **anterior (front)** and **posterior (back)** portions?</p>
+        <ol type="A">
+            <li>Sagittal plane</li>
+            <li>Transverse plane</li>
+            <li>Coronal plane</li>
+            <li>Horizontal plane</li>
+        </ol>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer4')">Show Answer</button>
+        <div id="answer4" class="answer-area hidden">C) Coronal plane</div>
+    </div>
+
+    <div class="question-block">
+        <strong>5. Matching:</strong>
+        <p>Match the directional term with its meaning (The pairings are provided here for the answer key):</p>
+        <ul>
+            <li>Superior: Nearer to the head</li>
+            <li>Lateral: Away from the median plane</li>
+            <li>Distal: Farther from the trunk or point of origin</li>
+            <li>Superficial: Nearer to the surface</li>
+        </ul>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer5')">Show Answer</button>
+        <div id="answer5" class="answer-area hidden">Superior $\rightarrow$ Nearer to the head | Lateral $\rightarrow$ Away from the median plane | Distal $\rightarrow$ Farther from the trunk or point of origin | Superficial $\rightarrow$ Nearer to the surface</div>
+    </div>
+
+    <div class="question-block">
+        <strong>6. Short Answer:</strong>
+        <p>If the knee is described as **proximal** to the ankle, what does "proximal" mean?</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer6')">Show Answer</button>
+        <div id="answer6" class="answer-area hidden">Nearer to the trunk or point of origin.</div>
+    </div>
+
+    <hr>
+
+    <h3>Section C: Terms of Movement</h3>
+
+    <div class="question-block">
+        <strong>7. Multiple Choice:</strong>
+        <p>The movement that describes bringing the flexor surfaces into approximation and **reducing the angle** of a joint is called:</p>
+        <ol type="A">
+            <li>Extension</li>
+            <li>Flexion</li>
+            <li>Abduction</li>
+            <li>Adduction</li>
+        </ol>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer7')">Show Answer</button>
+        <div id="answer7" class="answer-area hidden">B) Flexion</div>
+    </div>
+
+    <div class="question-block">
+        <strong>8. Fill in the Blank:</strong>
+        <p>When the forearm rotates **medially** so that the palm comes to face **backward**, this movement is termed **___________**.</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer8')">Show Answer</button>
+        <div id="answer8" class="answer-area hidden">Pronation</div>
+    </div>
+
+    <div class="question-block">
+        <strong>9. Short Answer:</strong>
+        <p>What combined movements make up **circumduction**?</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer9')">Show Answer</button>
+        <div id="answer9" class="answer-area hidden">Flexion, extension, adduction, and abduction in a circular manner.</div>
+    </div>
+
+    <hr>
+
+    <h3>Section D: Levels of Organization and Body Systems</h3>
+
+    <div class="question-block">
+        <strong>10. Ordering:</strong>
+        <p>Arrange the levels of organization in the human body from smallest to largest:</p>
+        <ul>
+            <li>Cellular level</li>
+            <li>Organ level</li>
+            <li>Chemical level</li>
+            <li>System level</li>
+            <li>Tissue level</li>
+        </ul>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer10')">Show Answer</button>
+        <div id="answer10" class="answer-area hidden">Chemical level $\rightarrow$ Cellular level $\rightarrow$ Tissue level $\rightarrow$ Organ level $\rightarrow$ System level</div>
+    </div>
+
+    <div class="question-block">
+        <strong>11. Multiple Choice:</strong>
+        <p>Which organ system is responsible for the transfer of oxygen from inhaled air to blood and carbon dioxide from blood to exhaled air?</p>
+        <ol type="A">
+            <li>Cardiovascular System</li>
+            <li>Endocrine System</li>
+            <li>Respiratory System</li>
+            <li>Lymphatic System</li>
+        </ol>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer11')">Show Answer</button>
+        <div id="answer11" class="answer-area hidden">C) Respiratory System</div>
+    </div>
+
+    <div class="question-block">
+        <strong>12. Short Answer:</strong>
+        <p>Name the two main parts of the skeleton as described in the text.</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer12')">Show Answer</button>
+        <div id="answer12" class="answer-area hidden">Axial skeleton and Appendicular skeleton.</div>
+    </div>
+
+    <hr>
+
+    <h3>Section E: Body Cavities and Homeostasis</h3>
+
+    <div class="question-block">
+        <strong>13. True or False:</strong>
+        <p>The central part of the thoracic cavity, located between the lungs and extending from the sternum to the vertebral column, is called the **mediastinum**.</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer13')">Show Answer</button>
+        <div id="answer13" class="answer-area hidden">True</div>
+    </div>
+
+    <div class="question-block">
+        <strong>14. Multiple Choice:</strong>
+        <p>In the context of the homeostatic system, what component **receives the information about variation in physiological parameters** from the receptors and activates the effector system?</p>
+        <ol type="A">
+            <li>Receptor</li>
+            <li>Control center</li>
+            <li>Effector</li>
+            <li>Internal environment</li>
+        </ol>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer14')">Show Answer</button>
+        <div id="answer14" class="answer-area hidden">B) Control center</div>
+    </div>
+
+    <div class="question-block">
+        <strong>15. Short Answer:</strong>
+        <p>The release of LH (luteinizing hormone) surge in response to increased estrogen during ovulation is given as a physiological example of which type of feedback mechanism?</p>
+        <button class="answer-button" onclick="toggleAnswer(this, 'answer15')">Show Answer</button>
+        <div id="answer15" class="answer-area hidden">Positive feedback mechanism.</div>
+    </div>
+
+</div>
+
+<script>
+    function toggleAnswer(button, answerId) {
+        var answerDiv = document.getElementById(answerId);
+        if (answerDiv.classList.contains('hidden')) {
+            answerDiv.classList.remove('hidden');
+            button.textContent = 'Hide Answer';
+        } else {
+            answerDiv.classList.add('hidden');
+            button.textContent = 'Show Answer';
+        }
+    }
+</script>
+
+</body>
+</html>
